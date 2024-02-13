@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Search Bar</title>
+    <style>
+        #searchBar {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #searchButton {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #searchButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="searchForm" onsubmit="searchQuery()">
+        <input type="text" id="searchBar" name="search" placeholder="Search...">
+        <input type="submit" id="searchButton" value="Search">
+    </form>
+
+    <script>
+        function searchQuery() {
+            event.preventDefault(); // Prevents the default form submit action
+            var searchInput = document.getElementById('searchBar').value;
+            alert("Search for: " + searchInput);
+            // You can add code here to handle the search input, like sending it to a server
+        }
+    </script>
+</body>
+</html>

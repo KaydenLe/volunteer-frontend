@@ -24,11 +24,15 @@ layout: base
 
     function search_event()
     {
-        
+        debugger;
         if(isSignedIn())
         {
             filter_event();
         } 
+        else
+        {
+            alert("Please Log In first!");
+        }
     }
 
     function parseJwt (token) {
@@ -50,7 +54,6 @@ layout: base
         }
         else
         {
-            alert("Please Log In first!");
             return false;
         }
     }
@@ -251,5 +254,21 @@ layout: base
         <div>
             <button id="editButton" onclick="addEvent()">Add Selected</button>
         </div>
+<<<<<<< HEAD
+=======
+        <script>
+            if(!isSignedIn())
+            {
+                document.getElementById('editButton').style.visibility = 'hidden';
+            }
+            else
+            {
+                if(!isAdmin())
+                {
+                    document.getElementById('editButton').style.visibility = 'hidden';
+                }
+            }
+        </script>
+>>>>>>> 4e21d68 (Hide buttons if not logged in and not admin)
     </body>
 </html>

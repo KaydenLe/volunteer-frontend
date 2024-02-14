@@ -16,6 +16,11 @@ layout: base
             window.location.href = "{{site.baseurl}}/AB_vacc.html";
         }
     }
+    else
+    {
+        alert("Please Log In first!");
+        window.location.href = "{{site.baseurl}}/AB_vacc.html";
+    }
 
     function isSignedIn()
     {
@@ -145,6 +150,16 @@ layout: base
         console.log(data);
         for (const row of data) {
           const tr = document.createElement("tr");
+<<<<<<< HEAD
+=======
+          tr.setAttribute('id', row.id);
+          tr.addEventListener('click', function(e)
+          {
+              var radiob = document.getElementById('radio-' + row.id);
+              radiob.checked = true;
+          });
+
+>>>>>>> 9e61c58 (admin fix)
 
           // Make each cell editable with input fields
           const vtitle = document.createElement("td");

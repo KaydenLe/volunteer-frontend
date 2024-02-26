@@ -47,8 +47,8 @@ title: maps
     let map;
     async function initMap() {
       map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 33.000, lng: -117.200 }, // Centered at Southern California
-        zoom: 8, // Adjust the zoom level as needed
+        center: { lat: 37.0902, lng: -95.7129}, // Centered of America
+        zoom: 4, // Adjust the zoom level as needed
         styles: [] // Remove custom styles
       });
       const markers = [
@@ -57,8 +57,8 @@ title: maps
         {lat:32.731602, lng: -117.147850, label: 'Balboa Natural History Museum'}, //1788 El Prado, San Diego, CA 92101
         {lat:34.042060, lng: -118.234790, label: 'Step Up'}, //510 South Hewitt Street #111 Los Angeles, CA 90013
         {lat:37.815840, lng: -122.268710, label: 'Children Rising'}, //2633 Telegraph Avenue #412
-        {lat:47.6383529, lng: 122.3765739, label: 'Seattle Animal Shelter'}, //2061 15th Ave W, Seattle, WA, 98119
-        {lat:40.7256445, lng: 74.0036074, label: 'God’s Love We Deliver'}, //166 Avenue of the Americas
+        {lat:47.6383529, lng: -122.3765739, label: 'Seattle Animal Shelter'}, //2061 15th Ave W, Seattle, WA, 98119
+        {lat:40.725719, lng: -74.003738, label: 'God’s Love We Deliver'}, //166 Avenue of the Americas
         {lat:29.8415611, lng: -81.3669855, label: 'Horse Play Therapy Center'}, //1925 State Road 207 Saint Augustine, FL 32086
         {lat:42.3176586, lng: -71.1027539, label: 'Community Servings Food Heals'}, //179 Amory Street Jamaica Plain, MA 02130
         {lat:41.8832522, lng: -87.6518247, label: 'Emmaus'}, //954 W. Washington Blvd

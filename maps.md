@@ -61,7 +61,7 @@ title: maps
         {lat:40.725719, lng: -74.003738, label: 'God’s Love We Deliver'}, //166 Avenue of the Americas
         {lat:29.8415611, lng: -81.3669855, label: 'Horse Play Therapy Center'}, //1925 State Road 207 Saint Augustine, FL 32086
         {lat:42.3176586, lng: -71.1027539, label: 'Community Servings Food Heals'}, //179 Amory Street Jamaica Plain, MA 02130
-        {lat:41.8832522, lng: -87.6518247, label: 'Emmaus'}, //954 W. Washington Blvd
+        {lat:41.8832522, lng: -87.6518247, label: 'Emmaus'},
         // Add markers for the remaining addresses following the same format...
       ];
       // Add markers to the map
